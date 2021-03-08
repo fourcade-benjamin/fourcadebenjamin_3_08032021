@@ -203,45 +203,10 @@ body {
   align-items: center;
   background-color: #f6f6f6;
 }
-.menu__titre {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 0px 0 0;
-}
-.menu__titre img {
-  width: 21px;
-  height: 21px;
-  fill: #ff79da;
-  stroke: #000000;
-  stroke-width: 1px;
-}
-.menu__btn {
-  margin-bottom: 14px;
-  border-radius: 15px;
-  width: 349px;
-  height: 68px;
-  border: none;
-  background-color: white;
-  text-align: left;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-.menu__btn span {
-  font-weight: bold;
-  position: relative;
-  left: 290px;
-  bottom: 15px;
-}
 .menu h1 {
   font-family: "shrikhand";
   margin: 0 35px 0 0;
   font-size: 1.6em;
-}
-.menu h2 {
-  letter-spacing: 0.5px;
-  font-size: 1em;
-  margin: 15px 0 5px 10px;
 }
 .menu__cat {
   letter-spacing: 0.5px;
@@ -267,8 +232,30 @@ body {
   position: relative;
   right: 155px;
 }
-.menu p {
+.menu__btn {
+  margin-bottom: 14px;
+  border-radius: 15px;
+  width: 349px;
+  height: 68px;
+  border: none;
+  background-color: white;
+  text-align: left;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.menu__btn span {
+  font-weight: bold;
+  position: relative;
+  left: 290px;
+  bottom: 18px;
+}
+.menu__btn h2 {
+  letter-spacing: 0.5px;
+  font-size: 1em;
+  margin: 15px 0 5px 10px;
+}
+.menu__btn p {
   margin: 0 0 0 10px;
+  font-size: 0.9em;
 }
 
 /*SVG-HEART*/
