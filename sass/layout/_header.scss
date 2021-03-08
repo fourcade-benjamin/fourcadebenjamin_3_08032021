@@ -1,0 +1,15 @@
+.logo {
+  @include flex-center;
+  margin: 0;
+  padding: 22px 0px 12px 0;
+  &--menu {
+    padding-right: 90px;
+  }
+  &__oh {
+    @include logo-size;
+  }
+  &__fleche {
+    @include icon-size-2;
+    margin-right: 65px;
+  }
+}

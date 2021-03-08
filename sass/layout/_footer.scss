@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  background: $couleur-footer;
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  h2 {
+    font-family: "shrikhand";
+    font-size: 1.1em;
+    padding-left: 25px;
+    letter-spacing: 0.5px;
+  }
+  ul {
+    padding-left: 25px;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 8px;
+
+    img {
+      margin-right: 12px;
+      width: 13px;
+      height: 13px;
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(160deg)
+        brightness(119%) contrast(119%);
+    }
+  }
+}

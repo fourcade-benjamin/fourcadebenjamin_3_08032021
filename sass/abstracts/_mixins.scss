@@ -1,0 +1,41 @@
+/*MIXINS*/
+
+@mixin icon-size {
+  width: 12px;
+  height: 16px;
+}
+@mixin icon-size-2 {
+  width: 30px;
+  height: 18px;
+}
+@mixin icon-size-3 {
+  width: 21px;
+  height: 21px;
+}
+@mixin logo-size {
+  width: 165px;
+  height: 30px;
+}
+@mixin flex-center {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin box-shadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@mixin box-shadow-2 {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+@mixin bouton-principal {
+  @include box-shadow;
+  font-weight: bold;
+  background: linear-gradient(-5deg, $couleur-primaire, $couleur-secondaire);
+  margin-top: 30px;
+  width: 205px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+}
