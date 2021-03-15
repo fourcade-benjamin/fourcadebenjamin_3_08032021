@@ -2,14 +2,19 @@
   @include flex-center;
   margin: 0;
   padding: 22px 0px 12px 0;
+
   &--menu {
-    padding-right: 90px;
+    width: 100%;
+    &--lnk {
+      flex-shrink: 0;
+      position: absolute;
+      left: 20px;
+    }
   }
   &__oh {
     @include logo-size;
   }
   &__fleche {
     @include icon-size-2;
-    margin-right: 65px;
   }
 }
