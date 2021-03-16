@@ -8,11 +8,16 @@ a {
   color: unset;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: auto;
   font-family: "roboto";
   width: 100%;
   overflow-x: hidden;
+  font-size: 100%;
 }
 
 /*ACC*/
@@ -32,7 +37,7 @@ body {
 }
 .loc p {
   margin: 0;
-  font-weight: bold;
+  font-weight: 100;
 }
 
 .pres {
@@ -45,29 +50,49 @@ body {
 }
 .pres__titre {
   text-align: center;
-  width: 65%;
+  width: 67%;
   margin: 0;
   font-size: 1.5em;
   font-weight: bold;
+  letter-spacing: -0.5px;
 }
 .pres__quote {
   margin: 20px 0 0 0;
   font-size: 1.06em;
   text-align: center;
   width: 83%;
+  color: #353535;
 }
 .pres__btn {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  font-weight: bold;
+  font-weight: 600;
   background: linear-gradient(-5deg, #9356dc, #ff79da);
   margin-top: 30px;
-  width: 205px;
+  width: 220px;
   height: 50px;
   border-radius: 30px;
   border: none;
   color: white;
+  letter-spacing: 0.1px;
+  font-size: 0.9em;
+}
+.pres__btn:hover {
+  cursor: pointer;
+  filter: opacity(0.9);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 .pres__btn--menu {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  background: linear-gradient(-5deg, #9356dc, #ff79da);
+  margin-top: 30px;
+  width: 186px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  letter-spacing: 0.1px;
+  font-size: 0.9em;
   margin: 31px 0 58px 0;
 }
 
@@ -75,35 +100,47 @@ body {
   display: flex;
   flex-flow: wrap column;
   align-items: center;
-  padding: 50px 0 43px 0;
-  margin-left: 10px;
+  padding: 50px 5px 43px 5px;
 }
-.fon h2 {
-  padding-right: 150px;
+.fon .fon__tlt {
+  padding-left: 20px;
+  width: 90%;
+  display: flex;
+  align-self: flex-start;
 }
-.fon__btn {
+.fon .fon__tlt h2 {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.fon__grp {
+  width: 90%;
+  padding: 0 0px;
+}
+.fon__grp--a {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: #f6f6f6;
   margin-bottom: 25px;
   border: none;
   border-radius: 20px;
-  width: 320px;
+  width: 100%;
   height: 70px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
-.fon__btn p {
+.fon__grp--a p {
+  white-space: nowrap;
+  padding-top: 3px;
   font-weight: bold;
   font-size: 1em;
   margin-left: 27px;
 }
-.fon__btn img {
+.fon__grp--a img {
   width: 30px;
   height: 18px;
   filter: invert(45%) sepia(91%) saturate(13%) hue-rotate(68deg) brightness(92%) contrast(96%);
 }
-.fon__btn span {
+.fon__grp--a span {
   font-family: "roboto";
   color: white;
   background-color: #9356dc;
@@ -112,19 +149,21 @@ body {
   position: relative;
   right: 11px;
 }
-.fon__btn--mauve {
+.fon__grp--a--mauve {
   background-color: #f5edff;
 }
-.fon__btn--mauve img {
+.fon__grp--a--mauve img {
   filter: invert(40%) sepia(68%) saturate(867%) hue-rotate(231deg) brightness(91%) contrast(91%);
 }
 
 .resto {
-  padding-bottom: 34px;
+  padding-bottom: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #f6f6f6;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 .resto a {
   height: 250px;
@@ -145,14 +184,14 @@ body {
   margin: 0;
 }
 .resto__carte {
-  width: 335px;
+  width: 100%;
   height: 250px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
 }
 .resto__carte img {
-  width: 335px;
+  width: 100%;
   height: 174px;
   object-fit: cover;
   object-position: bottom;
@@ -226,36 +265,6 @@ body {
   margin-bottom: 15px;
   position: relative;
 }
-.menu__btn {
-  margin-bottom: 14px;
-  border-radius: 15px;
-  width: 349px;
-  height: 68px;
-  border: none;
-  background-color: white;
-  text-align: left;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-.menu__btn span {
-  font-weight: bold;
-  position: relative;
-  left: 290px;
-  bottom: 18px;
-}
-.menu__btn h2 {
-  letter-spacing: 0.5px;
-  font-size: 1em;
-  margin: 15px 0 5px 10px;
-}
-.menu__btn p {
-  margin: 0 0 0 10px;
-  font-size: 0.9em;
-}
-.menu__btn--anm {
-  width: 20px;
-  height: 68px;
-  background-color: #99e2d0;
-}
 .menu__grp {
   width: 90%;
 }
@@ -317,7 +326,6 @@ body {
   position: relative;
   float: right;
   bottom: 40px;
-  right: 25px;
 }
 .card svg {
   width: 25px;
@@ -422,8 +430,9 @@ body {
   width: 100%;
   margin-bottom: 15px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 17px;
   box-shadow: gray 1px 1px 8px;
+  animation: upe 1s ease-in-out, margine 1s ease-in-out;
 }
 .box:hover {
   cursor: pointer;
@@ -489,6 +498,32 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes upe {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes margine {
+  from {
+    margin-bottom: 20px;
+  }
+  to {
+    margin-bottom: 15px;
   }
 }
 /*gradspin*/
