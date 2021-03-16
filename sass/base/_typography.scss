@@ -6,10 +6,13 @@ a {
   text-decoration: none;
   color: unset;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   margin: auto;
   font-family: "roboto";
   width: 100%;
   overflow-x: hidden;
+  font-size: 100%;
 }
