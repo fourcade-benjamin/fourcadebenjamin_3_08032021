@@ -1,20 +1,25 @@
-.logo {
-  @include flex-center;
-  margin: 0;
-  padding: 22px 0px 12px 0;
+/*LOGO-PAGE-ACCUEIL*/
 
-  &--menu {
-    width: 100%;
-    &--lnk {
-      flex-shrink: 0;
-      position: absolute;
-      left: 20px;
-    }
-  }
-  &__oh {
+.main-logo-box {
+  display: flex;
+  justify-content: center;
+  padding: 22px 0 12px 0;
+  &__omf {
     @include logo-size;
   }
-  &__fleche {
-    @include icon-size-2;
+
+  /*LOGO-PAGES-MENU*/
+
+  &__menu {
+    align-items: center;
+
+    /*FLECHE*/
+    &--link {
+      position: absolute;
+      left: 20px;
+      img {
+        @include icon-size-2;
+      }
+    }
   }
 }

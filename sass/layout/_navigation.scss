@@ -1,32 +1,35 @@
-/*ACC*/
+/*ACCUEIL*/
 
-.loc {
-  @include flex-center;
+/*DIV-LOCALISATION*/
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #eaeaea;
   padding: 16px 30px 16px 0;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 4px 0px inset;
   img {
-    @include icon-size;
+    height: 16px;
     margin-right: 18px;
   }
   p {
     margin: 0;
-    font-weight: 100;
   }
 }
-.pres {
+
+/*SECTION-PRESENTATION*/
+
+.presentation {
   padding: 43px 0 57px 0;
   background-color: $couleur-section;
   display: flex;
   flex-flow: wrap column;
   align-items: center;
-  width: 100%;
-  &__titre {
+  &__title {
     text-align: center;
     width: 67%;
     margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
     letter-spacing: -0.5px;
   }
   &__quote {
@@ -36,54 +39,36 @@
     width: 83%;
     color: #353535;
   }
-  &__btn {
-    &:hover {
-      cursor: pointer;
-      filter: opacity(0.9);
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-    }
-    @include bouton-principal;
-    &--menu {
-      @include bouton-menu;
-      margin: 31px 0 58px 0;
-    }
-  }
 }
-.fon {
+
+/*SECTION-FONCTIONNEMENT*/
+
+.fonctionnement {
   display: flex;
   flex-flow: wrap column;
   align-items: center;
   padding: 50px 5px 43px 5px;
-  .fon__tlt {
-    padding-left: 20px;
-    width: 90%;
+  .fonctionnement__title {
     display: flex;
     align-self: flex-start;
+    margin: 0 0 30px 15px;
     h2 {
-      margin-bottom: 30px;
-      margin-top: 0;
+      margin: 0;
     }
   }
-  &__grp {
+  &__group {
     width: 90%;
-    padding: 0 0px;
     &--a {
       @include box-shadow;
       background-color: $couleur-section;
       margin-bottom: 25px;
-      border: none;
       border-radius: 20px;
-      width: 100%;
-
       height: 70px;
       display: flex;
-      flex-flow: row nowrap;
       align-items: center;
       p {
-        white-space: nowrap;
         padding-top: 3px;
         font-weight: bold;
-        font-size: 1em;
         margin-left: 27px;
       }
       img {
@@ -92,40 +77,49 @@
           brightness(92%) contrast(96%);
       }
       span {
-        font-family: "roboto";
         color: white;
         background-color: $couleur-primaire;
-        border-radius: 10px;
-        padding: 1px 6px 0.6px 6px;
+        border-radius: 10.5px;
+        padding: 2px 6px 1px 6px;
         position: relative;
-        right: 11px;
+        right: 10px;
+        font-size: 0.8em;
       }
-      &--mauve {
-        background-color: #f5edff;
-        img {
-          filter: invert(40%) sepia(68%) saturate(867%) hue-rotate(231deg)
-            brightness(91%) contrast(91%);
-        }
+    }
+    &--mauve {
+      background-color: #f5edff;
+      img {
+        filter: invert(40%) sepia(68%) saturate(867%) hue-rotate(231deg)
+          brightness(91%) contrast(91%);
       }
     }
   }
 }
-.resto {
-  padding-bottom: 46px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+/*CARTES-RESTAURANTS*/
+
+.restaurants {
+  padding: 0 20px 46px 20px;
   background-color: $couleur-section;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   a {
-    height: 250px;
     margin-bottom: 18px;
   }
+  &__new {
+    float: right;
+    position: relative;
+    bottom: 175px;
+    right: 12px;
+    padding: 8px 13px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: $couleur-tertiaire;
+    color: #008766;
+    font-weight: bold;
+  }
   h2 {
-    padding-right: 200px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin: 50px 0 25px 0;
   }
   &__lieu {
     padding: 10px 0 19px 13px;
@@ -137,8 +131,6 @@
     }
   }
   &__carte {
-    width: 100%;
-    height: 250px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
@@ -203,25 +195,20 @@
     margin: 0 0 0 5px;
     font-size: 1.6em;
   }
+  &__grp {
+    width: 90%;
+  }
   &__cat {
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    font-weight: unset;
     font-size: 0.9em;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-top: 45px;
+    margin: 45px 0 5px 5px;
   }
   &__under {
     width: 40px;
     height: 3px;
     background-color: $couleur-tertiaire;
-    margin-left: 5px;
-    margin-bottom: 15px;
-    position: relative;
-  }
-  &__grp {
-    width: 90%;
+    margin: 0 0 15px 5px;
   }
 }
 
@@ -321,7 +308,7 @@
   justify-content: space-between;
 }
 
-/*SPIN*/
+/*LOADING-SPINNER*/
 
 .space_spinner {
   width: 0%;
@@ -383,20 +370,57 @@
   }
 }
 
+/*SPINNER-CENTRALE*/
+
+.spinner-box {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.circle-border {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $couleur-primaire;
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.1) 33%,
+    rgba(255, 121, 218, 0.5) 100%
+  );
+
+  animation: spin 1s linear 0s 3;
+}
+.circle-core {
+  width: 100%;
+  height: 100%;
+  background-color: $couleur-section;
+  border-radius: 50%;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 /*ANI-MENU-DIV*/
 
 .box {
   overflow: hidden;
   display: flex;
-  padding: 0px 0;
-  height: auto;
-  width: 100%;
   margin-bottom: 15px;
   background-color: white;
   border-radius: 17px;
   box-shadow: gray 1px 1px 8px;
   animation: upe 1s ease-in-out, margine 1s ease-in-out;
-
   &:hover {
     cursor: pointer;
   }
@@ -409,9 +433,7 @@
     animation: roll 0.5s;
     transform: rotate(360deg);
   }
-
   &__txt {
-    background-color: transparent;
     width: 100%;
     overflow: hidden;
     h2 {
@@ -433,16 +455,13 @@
   }
   &__spn {
     font-weight: bold;
-    padding-bottom: 9px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0 20px 9px 20px;
     display: flex;
     align-items: flex-end;
   }
   &__hov {
     flex-shrink: 0;
-    width: 0px;
-    height: 70px;
+    width: 0;
     transition: width 0.5s;
     background-color: #99e2d0;
     &__el {
@@ -488,45 +507,5 @@
   }
   to {
     margin-bottom: 15px;
-  }
-}
-/*gradspin*/
-
-.spinner-box {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-}
-.circle-border {
-  width: 150px;
-  height: 150px;
-  padding: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: $couleur-primaire;
-  background: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.1) 33%,
-    rgba(255, 121, 218, 0.5) 100%
-  );
-
-  animation: spin 1s linear 0s 3;
-}
-.circle-core {
-  width: 100%;
-  height: 100%;
-  background-color: $couleur-section;
-  border-radius: 50%;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(359deg);
   }
 }
