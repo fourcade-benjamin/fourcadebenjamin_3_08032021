@@ -45,12 +45,10 @@
   @include box-shadow;
   font-weight: 600;
   background: linear-gradient(-5deg, $couleur-primaire, $couleur-secondaire);
-  margin-top: 30px;
   width: 186px;
   height: 50px;
   border-radius: 30px;
   border: none;
   color: white;
-  letter-spacing: 0.1px;
   font-size: 0.9em;
 }

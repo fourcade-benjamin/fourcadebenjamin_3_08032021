@@ -1,1 +1,19 @@
-/*SVG heart*/
+/*BOUTON-PRINCIPAL*/
+
+.main-btn {
+  @include bouton-principal;
+  &:hover {
+    cursor: pointer;
+    filter: opacity(0.9);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+.menu-btn {
+  @include bouton-menu;
+  margin: 31px 0 58px 0;
+  &:hover {
+    cursor: pointer;
+    filter: opacity(0.9);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+}
