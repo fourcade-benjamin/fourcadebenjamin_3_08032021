@@ -1,0 +1,158 @@
+/*ACCUEIL*/
+
+/*B-DIV-LOCALISATION*/
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 16px 30px 16px 0;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 4px 0px inset;
+  img {
+    height: 16px;
+    margin-right: 18px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+/*C-SECTION-PRESENTATION*/
+
+.presentation {
+  padding: 43px 0 57px 0;
+  background-color: $couleur-section;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  &__title {
+    text-align: center;
+    width: 67%;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+  &__quote {
+    margin: 20px 0 0 0;
+    font-size: 1.06em;
+    text-align: center;
+    width: 83%;
+    color: #353535;
+  }
+}
+
+/*D-SECTION-FONCTIONNEMENT*/
+
+.fonctionnement {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  padding: 50px 5px 43px 5px;
+  .fonctionnement__title {
+    display: flex;
+    align-self: flex-start;
+    margin: 0 0 30px 15px;
+    h2 {
+      margin: 0;
+    }
+  }
+  &__group {
+    width: 90%;
+    &--a {
+      @include box-shadow;
+      background-color: $couleur-section;
+      margin-bottom: 25px;
+      border-radius: 20px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      p {
+        padding-top: 3px;
+        font-weight: bold;
+        margin-left: 27px;
+      }
+      img {
+        @include icon-size-2;
+        filter: invert(45%) sepia(91%) saturate(13%) hue-rotate(68deg)
+          brightness(92%) contrast(96%);
+      }
+      span {
+        color: white;
+        background-color: $couleur-primaire;
+        border-radius: 10.5px;
+        padding: 2px 6px 1px 6px;
+        position: relative;
+        right: 10px;
+        font-size: 0.8em;
+      }
+    }
+    &--mauve {
+      background-color: #f5edff;
+      img {
+        filter: invert(40%) sepia(68%) saturate(867%) hue-rotate(231deg)
+          brightness(91%) contrast(91%);
+      }
+    }
+  }
+}
+
+/*E-CARTES-RESTAURANTS*/
+
+.restaurants {
+  padding: 0 20px 46px 20px;
+  background-color: $couleur-section;
+  display: flex;
+  flex-direction: column;
+  a {
+    margin-bottom: 18px;
+  }
+  &__new {
+    float: right;
+    position: relative;
+    bottom: 175px;
+    right: 12px;
+    padding: 8px 13px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: $couleur-tertiaire;
+    color: #008766;
+    font-weight: bold;
+  }
+  h2 {
+    margin: 50px 0 25px 0;
+  }
+  &__lieu {
+    padding: 10px 0 19px 13px;
+    h3 {
+      margin: 0 0 2px 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &__carte {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+      height: 174px;
+      object-fit: cover;
+      object-position: bottom;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    &--modif {
+      img {
+        object-position: 0 60%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 390px) {
+  .restaurants__carte img {
+    object-position: 50% 50%;
+  }
+}
