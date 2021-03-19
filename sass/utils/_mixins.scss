@@ -30,6 +30,7 @@
 }
 @mixin bouton-principal {
   @include box-shadow;
+  font-family: "roboto";
   font-weight: 600;
   background: linear-gradient(-5deg, $couleur-primaire, $couleur-secondaire);
   margin-top: 30px;
@@ -43,6 +44,7 @@
 }
 @mixin bouton-menu {
   @include box-shadow;
+  font-family: "roboto";
   font-weight: 600;
   background: linear-gradient(-5deg, $couleur-primaire, $couleur-secondaire);
   width: 186px;
