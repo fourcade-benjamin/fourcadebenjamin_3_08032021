@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/fourcadebenjamin_3_08032021/css/main.css" />
+    <link rel="stylesheet" href="/main.css" />
     <title>OHMYFOOD!</title>
   </head>
   <body>
-    <!--SPIN-->
+    <!--LOADING-SPINNER-->
 
-    <div class="box-spinner">
-      <div class="box-spinner__fork">
+    <div class="Loading-SpinnerBox">
+      <!--SVG-FORK-->
+      <div class="Loading-SpinnerBox__fork">
         <svg
           version="1.1"
           id="Capa_1"
@@ -38,30 +39,16 @@
           c6.177,0,11.801-2.399,16-6.31c4.199,3.911,9.823,6.31,16,6.31s11.801-2.399,16-6.31c4.199,3.911,9.823,6.31,16,6.31
           c2.997,0,5.862-0.57,8.5-1.597v13.083C296,153.938,289.938,160,282.452,160z"
           />
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
         </svg>
       </div>
-      <!--ANIMATION CENTRALE-->
-      <div class="circle">
-        <div class="circle__border">
-          <div class="circle__core"></div>
+      <!--CENTRAL-CIRCLE-->
+      <div class="Loading-SpinnerBox__circle">
+        <div class="Loading-SpinnerBox__circle__border">
+          <div class="Loading-SpinnerBox__circle__core"></div>
         </div>
       </div>
-      <div class="box-spinner__knife">
+      <!--SVG-KNIFE-->
+      <div class="Loading-SpinnerBox__knife">
         <svg
           version="1.1"
           id="Capa_2"
@@ -82,50 +69,30 @@
           c-2.975,3.212-7.024,4.981-11.481,4.981c-8.569,0-15.54-6.971-15.54-15.54V326.975c0.166,0.011,0.331,0.025,0.5,0.025h18.901
           l11.713,152.268C266.909,483.633,265.455,487.806,262.48,491.019z"
           />
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
-          <g></g>
         </svg>
       </div>
     </div>
 
     <!--HEADER-->
 
-    <header>
+    <header class="HeaderBox">
       <!--LOGO-->
 
-      <div class="main-logo-box">
-        <img
-          class="main-logo-box__img"
-          src="/fourcadebenjamin_3_08032021/sources/img/logo.png"
-          alt="logo ohmyfood!"
-        />
-      </div>
+      <img
+        class="HeaderBox__logo"
+        src="/sources/img/logo.png"
+        alt="ohmyfood! logo"
+      />
     </header>
 
-    <!--DIV-LOCALISATION-->
+    <!--LOCALISATION-->
 
-    <div class="localisation">
-      <img
-        src="/fourcadebenjamin_3_08032021/sources/icon/map.svg"
-        alt="icône localisation"
-      />
+    <section class="localisation">
+      <img src="/sources/icon/map.svg" alt="localisation icon" />
       <p>Paris, Belleville</p>
-    </div>
+    </section>
 
-    <!--SECTION-PRESENTATION-->
+    <!--PRESENTATION-->
 
     <section class="presentation">
       <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
@@ -138,66 +105,60 @@
       <button class="main-btn">Explorer nos restaurants</button>
     </section>
 
-    <!--SECTION-FONCTIONNEMENT-->
+    <!--FONCTIONNEMENT-->
 
     <section class="fonctionnement">
+      <!--FONCTIONNEMENT-TITLE-->
+
       <div class="fonctionnement__title"><h2>Fonctionnement</h2></div>
 
-      <!--FONCTIONNEMENT 1-->
-      <div class="fonctionnement__group">
-        <div class="fonctionnement__group--a">
+      <!--FONCTIONNEMENT-BOX-->
+      <div class="fonctionnement__box">
+        <!--FONCTIONNEMENT-1-->
+
+        <div class="fonctionnement__box__item">
           <span>1</span
-          ><img
-            src="/fourcadebenjamin_3_08032021/sources/icon/phone.svg"
-            alt="icône smartphone"
-          />
+          ><img src="/sources/icon/phone.svg" alt="smartphone icon" />
           <p>Choisissez un restaurant</p>
         </div>
 
-        <!--FONCTIONNEMENT 2-->
+        <!--FONCTIONNEMENT-2-->
 
-        <div class="fonctionnement__group--a">
-          <span>2</span
-          ><img
-            src="/fourcadebenjamin_3_08032021/sources/icon/list.svg"
-            alt="icône liste"
-          />
+        <div class="fonctionnement__box__item">
+          <span>2</span><img src="/sources/icon/list.svg" alt="icône liste" />
           <p>Composez votre menu</p>
         </div>
 
-        <!--FONCTIONNEMENT 3-->
+        <!--FONCTIONNEMENT-3-->
 
-        <div class="fonctionnement__group--a fonctionnement__group--mauve">
+        <div class="fonctionnement__box__item fonctionnement__box--colorpurple">
           <span>3</span
-          ><img
-            src="/fourcadebenjamin_3_08032021/sources/icon/store.svg"
-            alt="icône boutique"
-          />
+          ><img src="/sources/icon/store.svg" alt="icône boutique" />
           <p>Dégustez au restaurant</p>
         </div>
       </div>
     </section>
 
-    <!--SECTION-CARTES-RESTAURANTS-->
+    <!--RESTAURANTS-CARDS-->
 
-    <section class="restaurants">
-      <h2 class="restaurants__titre">Restaurants</h2>
+    <section class="restaurantsBox">
+      <h2>Restaurants</h2>
 
       <!--RESTAURANT-LA PALETTE DU GOUT-->
 
-      <a href="resto-1.html">
-        <article class="restaurants__carte">
+      <a href="1_La_palette_du_goût.html">
+        <article class="restaurantsBox__card">
           <!--IMG-->
 
           <img
-            src="/fourcadebenjamin_3_08032021/sources/img/resto_1.jpg"
+            src="/sources/img/resto_1.jpg"
             alt="Restaurant La palette du goût"
           />
 
-          <!--TEXTE-->
+          <!--TEXT + LIKE-->
 
-          <div class="restaurants__lieu">
-            <div class="restaurants__new"><p>Nouveau</p></div>
+          <div class="restaurantsBox__localisation">
+            <div class="restaurantsBox__nouveau"><p>Nouveau</p></div>
             <h3>La palette du goût</h3>
             <p>Ménilmontant</p>
 
@@ -231,19 +192,21 @@
 
       <!--RESTAURANT-LA NOTE ENCHANTEE-->
 
-      <a href="resto-2.html">
-        <article class="restaurants__carte restaurants__carte--modif">
+      <a href="2_La_note_enchantée.html">
+        <article
+          class="restaurantsBox__card restaurantsBox__card--imgModification"
+        >
           <!--IMG-->
 
           <img
-            src="/fourcadebenjamin_3_08032021/sources/img/resto_2.jpg"
+            src="/sources/img/resto_2.jpg"
             alt="Restaurant La note enchantée"
           />
 
-          <!--TEXTE-->
+          <!--TEXT + LIKE-->
 
-          <div class="restaurants__lieu">
-            <div class="restaurants__new"><p>Nouveau</p></div>
+          <div class="restaurantsBox__localisation">
+            <div class="restaurantsBox__nouveau"><p>Nouveau</p></div>
             <h3>La note enchantée</h3>
             <p>Charonne</p>
 
@@ -275,20 +238,17 @@
         </article>
       </a>
 
-      <!--RESTO-A LA FRANCAISE-->
+      <!--RESTAURANT-A LA FRANCAISE-->
 
-      <a href="resto-3.html">
-        <article class="restaurants__carte">
+      <a href="3_A_la_française.html">
+        <article class="restaurantsBox__card">
           <!--IMG-->
 
-          <img
-            src="/fourcadebenjamin_3_08032021/sources/img/resto_3.jpg"
-            alt="Restaurant À la française"
-          />
+          <img src="/sources/img/resto_3.jpg" alt="Restaurant À la française" />
 
-          <!--TEXTE-->
+          <!--TEXT + LIKE-->
 
-          <div class="restaurants__lieu">
+          <div class="restaurantsBox__localisation">
             <h3>À la française</h3>
             <p>Cité rouge</p>
 
@@ -320,20 +280,20 @@
         </article>
       </a>
 
-      <!--RESTO-LE DELICE DES SENS-->
+      <!--RESTAURANT-LE DELICE DES SENS-->
 
-      <a href="resto-4.html">
-        <article class="restaurants__carte">
+      <a href="4_Le_délice_des_sens.html">
+        <article class="restaurantsBox__card">
           <!--IMG-->
 
           <img
-            src="/fourcadebenjamin_3_08032021/sources/img/resto_4.jpg"
+            src="/sources/img/resto_4.jpg"
             alt="Restaurant Le délice des sens"
           />
 
-          <!--TEXTE-->
+          <!--TEXT + LIKE-->
 
-          <div class="restaurants__lieu">
+          <div class="restaurantsBox__localisation">
             <h3>Le délice des sens</h3>
             <p>Folie-Méricourt</p>
 
@@ -371,22 +331,18 @@
     <footer class="footer">
       <h2>ohmyfood</h2>
       <ul>
-        <!--USTENCIL-->
+        <!--CUTLERY-->
 
         <li>
-          <img
-            src="/fourcadebenjamin_3_08032021/sources/icon/ustencil.svg"
-            alt="icône couverts"
-          />Proposer un restaurant
+          <img src="/sources/icon/ustencil.svg" alt="cutlery icon" />Proposer un
+          restaurant
         </li>
 
         <!--HAND-->
 
         <li>
-          <img
-            src="/fourcadebenjamin_3_08032021/sources/icon/hand.svg"
-            alt="icône poignée de main"
-          />Devenir partenaire
+          <img src="/sources/icon/hand.svg" alt="hand shake icon" />Devenir
+          partenaire
         </li>
 
         <!--MENTIONS-->

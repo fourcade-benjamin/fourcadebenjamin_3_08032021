@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/fourcadebenjamin_3_08032021/css/main.css" />
+    <link rel="stylesheet" href="/main.css" />
     <title>Le délice des sens</title>
   </head>
+
   <body>
     <!--HEADER-->
 
-    <header>
-      <div class="main-logo-box main-logo-box__menu">
-        <!--FLECHE-->
-        <div class="main-logo-box__menu--link">
-          <a href="/fourcadebenjamin_3_08032021/html/">
-            <img
-              src="/fourcadebenjamin_3_08032021/sources/icon/arrow.svg"
-              alt="icône flèche"
-            />
-          </a>
-        </div>
-        <!--LOGO-->
-
-        <img
-          class="main-logo-box__img"
-          src="/fourcadebenjamin_3_08032021/sources/img/logo.png"
-          alt="logo ohmyfood!"
-        />
+    <header class="HeaderBox">
+      <!--ARROW-->
+      <div class="HeaderBox__link">
+        <a  href="/index.html" >
+          <img src="/sources/icon/arrow.svg" alt="icône flèche" />
+        </a>
       </div>
-    </header>
+      <!--LOGO-->
 
-    <!--BACKGROUND-IMG-->
+      <img class="HeaderBox__logo" src="/sources/img/logo.png" alt="logo ohmyfood!" />
+    </div>
+  </header>
 
-    <div class="photo photo--d">
-      <div class="photo__stripe"></div>
+    <!--RESTAURANT-PICTURE-->
+
+    <div class="restaurantPictureBox restaurantPictureBox--restaurant4">
+      <div class="restaurantPictureBox__bottomStripe restaurantPictureBox__bottomStripe--restaurant4"></div>
     </div>
 
     <!--MENU-->
 
-    <section class="menu">
-      <!--TITRE-->
+    <section class="menuBox">
+      <!--TITLE-->
 
-      <div class="full-titre">
-        <div class="menu__titre">
+      <div class="menuBox__title">
+        <div>
           <h1>Le délice des sens</h1>
         </div>
 
@@ -73,26 +67,26 @@
         </div>
       </div>
 
-      <!--ENT+PLT+DSR-->
+      <!--ENTREE + PLAT + DESSERT-->
 
-      <div class="menu__grp">
+      <div class="menuBox__mainGroup">
         <!--ENTREE-->
 
-        <p class="menu__cat">Entrées</p>
-        <div class="menu__under"></div>
+        <p class="menuBox__category">Entrées</p>
+        <div class="menuBox__greenUnderline"></div>
 
         <!--ENTREE A-->
 
-        <div class="box">
-          <div class="box__txt">
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
             <h2>Tartare de thon</h2>
             <p>Assaisonné au yuzu</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>25€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -113,16 +107,16 @@
 
         <!--ENTREE B-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Bouchée de homard croustillant</h2>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Bouchée de homard croustillant </h2>
             <p>Et sa farandole de petits légumes</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>35€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -143,16 +137,16 @@
 
         <!--ENTREE C-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Velouté de cèpes</h2>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Velouté de cèpes </h2>
             <p>Aux truffes</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>20€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -173,21 +167,21 @@
 
         <!--PLATS-->
 
-        <p class="menu__cat menu__cat--pl">Plats</p>
-        <div class="menu__under"></div>
+        <p class="menuBox__category">Plats</p>
+        <div class="menuBox__greenUnderline"></div>
 
         <!--PLAT A-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Poulet rôti aux herbes de <br />Provence</h2>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Poulet rôti aux herbes de Provence </h2>
             <p>Et sa crème de truffe</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>40€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -208,16 +202,16 @@
 
         <!--PLAT B-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Langouste rôtie</h2>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Langouste rôtie </h2>
             <p>Et ses légumes de saison</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>35€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -238,16 +232,16 @@
 
         <!--PLAT C-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Côte de boeuf Angus</h2>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Côte de boeuf Angus </h2>
             <p>Et sa purée de panais</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>44€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -268,21 +262,21 @@
 
         <!--DESSERTS-->
 
-        <p class="menu__cat menu__cat--des">Desserts</p>
-        <div class="menu__under"></div>
+        <p class="menuBox__category">Desserts</p>
+        <div class="menuBox__greenUnderline"></div>
 
         <!--DESSERTS A-->
 
-        <div class="box">
-          <div class="box__txt">
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
             <h2>Farandole de desserts</h2>
             <p>Du chef</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>18€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -303,16 +297,16 @@
 
         <!--DESSERTS B-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Crème brulée</h2>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Crème brulée </h2>
             <p>Revisitée</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>22€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -333,16 +327,16 @@
 
         <!--DESSERTS C-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Tiramisu</h2>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Tiramisu </h2>
             <p>À la noisette</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>23€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -371,22 +365,18 @@
     <footer class="footer">
       <h2>ohmyfood</h2>
       <ul>
-        <!--USTENCIL-->
+        <!--CUTLERY-->
 
         <li>
-          <img
-            src="/fourcadebenjamin_3_08032021/sources/icon/ustencil.svg"
-            alt=""
-          />Proposer un restaurant
+          <img src="/sources/icon/ustencil.svg" alt="cutlery icon" />Proposer un
+          restaurant
         </li>
 
         <!--HAND-->
 
         <li>
-          <img
-            src="/fourcadebenjamin_3_08032021/sources/icon/hand.svg"
-            alt=""
-          />Devenir partenaire
+          <img src="/sources/icon/hand.svg" alt="hand shake icon" />Devenir
+          partenaire
         </li>
 
         <!--MENTIONS-->
@@ -399,4 +389,5 @@
       </ul>
     </footer>
   </body>
+
 </html>

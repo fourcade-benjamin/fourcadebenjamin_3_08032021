@@ -1,51 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/fourcadebenjamin_3_08032021/css/main.css" />
-    <title>À la française</title>
+    <link rel="stylesheet" href="/main.css" />
+    <title>La note enchantée</title>
   </head>
 
   <body>
     <!--HEADER-->
 
-    <header>
-      <div class="main-logo-box main-logo-box__menu">
-        <!--FLECHE-->
-        <div class="main-logo-box__menu--link">
-          <a href="/fourcadebenjamin_3_08032021/html/">
-            <img
-              src="/fourcadebenjamin_3_08032021/sources/icon/arrow.svg"
-              alt="icône flèche"
-            />
-          </a>
-        </div>
-        <!--LOGO-->
-
-        <img
-          class="main-logo-box__img"
-          src="/fourcadebenjamin_3_08032021/sources/img/logo.png"
-          alt="logo ohmyfood!"
-        />
+    <header class="HeaderBox">
+      <!--ARROW-->
+      <div class="HeaderBox__link">
+        <a  href="/index.html" >
+          <img src="/sources/icon/arrow.svg" alt="icône flèche" />
+        </a>
       </div>
-    </header>
+      <!--LOGO-->
 
-    <!--BACKGROUND-IMG-->
+      <img class="HeaderBox__logo" src="/sources/img/logo.png" alt="logo ohmyfood!" />
+    </div>
+  </header>
 
-    <div class="photo photo--c">
-      <div class="photo__stripe"></div>
+    <!--RESTAURANT-PICTURE-->
+
+    <div class="restaurantPictureBox restaurantPictureBox--restaurant2">
+      <div class="restaurantPictureBox__bottomStripe restaurantPictureBox__bottomStripe--restaurant2"></div>
     </div>
 
     <!--MENU-->
 
-    <section class="menu">
-      <!--TITRE-->
+    <section class="menuBox">
+      <!--TITLE-->
 
-      <div class="full-titre">
-        <div class="menu__titre">
-          <h1>À la française</h1>
+      <div class="menuBox__title">
+        <div>
+          <h1>La note enchantée</h1>
         </div>
 
         <!--SVG-->
@@ -74,26 +67,26 @@
         </div>
       </div>
 
-      <!--ENT+PLT+DSR-->
+      <!--ENTREE + PLAT + DESSERT-->
 
-      <div class="menu__grp">
+      <div class="menuBox__mainGroup">
         <!--ENTREE-->
 
-        <p class="menu__cat">Entrées</p>
-        <div class="menu__under"></div>
+        <p class="menuBox__category">Entrées</p>
+        <div class="menuBox__greenUnderline"></div>
 
         <!--ENTREE A-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Tartare de poulpe acidulé</h2>
-            <p>Aux zestes d'orange</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Ravioles de foie gras</h2>
+            <p>Accompagnés de leur crème à la truffe</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>25€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -114,16 +107,16 @@
 
         <!--ENTREE B-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Velouté de légumes d'antan</h2>
-            <p>Carotte, panais, topinambour</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Caviar osciètre </h2>
+            <p>Sur blini à la farine de blé noir</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>35€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -144,16 +137,46 @@
 
         <!--ENTREE C-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Soupe à l'oignon</h2>
-            <p>Revisitée</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Homard et espuma de potiron</h2>
+            <p>Assaisonné à la truffe sur lit de caviar</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>20€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="check-circle"
+                class="svg-inline--fa fa-check-circle fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!--ENTREE D-->
+
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Foie gras de canard cuit entier</h2>
+            <p>Confiture de figue et pain toasté</p>
+          </div>
+          <div class="menuBox__item__price">
+            <span>35€</span>
+          </div>
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -174,21 +197,21 @@
 
         <!--PLATS-->
 
-        <p class="menu__cat menu__cat--pl">Plats</p>
-        <div class="menu__under"></div>
+        <p class="menuBox__category">Plats</p>
+        <div class="menuBox__greenUnderline"></div>
 
         <!--PLAT A-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Coquilles Saint-Jacques</h2>
-            <p>Accompagnées d'une purée de panais</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Noix de coquilles Saint-Jacques</h2>
+            <p>Sur lit de purée de céleri-rave</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>40€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -209,16 +232,16 @@
 
         <!--PLAT B-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Magret de canard</h2>
-            <p>Et parmentier de pommes de terre</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Langoustine poêlée</h2>
+            <p>Purée de patate douce</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>35€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -239,16 +262,16 @@
 
         <!--PLAT C-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Pigeonneau d’Ille-et-Vilaine</h2>
-            <p>Sur son lit de gnocchis aux légumes</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Mijoté de queue de boeuf </h2>
+            <p>Et riz sauvage aux zestes de citron</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>44€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -269,21 +292,21 @@
 
         <!--DESSERTS-->
 
-        <p class="menu__cat menu__cat--des">Desserts</p>
-        <div class="menu__under"></div>
+        <p class="menuBox__category">Desserts</p>
+        <div class="menuBox__greenUnderline"></div>
 
         <!--DESSERTS A-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Pétales de violettes glacés</h2>
-            <p>Et purée de noisettes</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Macaron noisette et chocolat</h2>
+            <p>Glace au caramel brun et sel de Guérande</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>18€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -304,16 +327,16 @@
 
         <!--DESSERTS B-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Fondant au chocolat</h2>
-            <p>Revisité</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Baba au rhum revisité </h2>
+            <p>Avec son coulis de citron</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>22€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -334,16 +357,16 @@
 
         <!--DESSERTS C-->
 
-        <div class="box">
-          <div class="box__txt">
-            <h2>Millefeuille croustillant</h2>
-            <p>Myrtilles et pâte d’amande</p>
+        <div class="menuBox__item">
+          <div class="menuBox__item__text">
+            <h2>Tarte au citron meringuée </h2>
+            <p>Déstructurée</p>
           </div>
-          <div class="box__spn">
+          <div class="menuBox__item__price">
             <span>23€</span>
           </div>
-          <div class="box__hov">
-            <div class="box__hov__el">
+          <div class="menuBox__item__hoverBox">
+            <div class="menuBox__item__hoverBox__element">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -362,7 +385,6 @@
           </div>
         </div>
       </div>
-
       <!--COMMANDER-->
 
       <button class="menu-btn">Commander</button>
@@ -373,22 +395,18 @@
     <footer class="footer">
       <h2>ohmyfood</h2>
       <ul>
-        <!--USTENCIL-->
+        <!--CUTLERY-->
 
         <li>
-          <img
-            src="/fourcadebenjamin_3_08032021/sources/icon/ustencil.svg"
-            alt=""
-          />Proposer un restaurant
+          <img src="/sources/icon/ustencil.svg" alt="cutlery icon" />Proposer un
+          restaurant
         </li>
 
         <!--HAND-->
 
         <li>
-          <img
-            src="/fourcadebenjamin_3_08032021/sources/icon/hand.svg"
-            alt=""
-          />Devenir partenaire
+          <img src="/sources/icon/hand.svg" alt="hand shake icon" />Devenir
+          partenaire
         </li>
 
         <!--MENTIONS-->
@@ -401,4 +419,5 @@
       </ul>
     </footer>
   </body>
+
 </html>
