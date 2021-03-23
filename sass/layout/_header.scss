@@ -1,24 +1,26 @@
-/*LOGO-PAGE-ACCUEIL*/
+/*HOME-PAGE-HEADER*/
 
-.main-logo-box {
+.HeaderBox {
   display: flex;
   justify-content: center;
   padding: 22px 0 12px 0;
-  &__img {
-    @include logo-size;
+  &__logo {
+    width: auto;
+    height: 30px;
   }
 
-  /*LOGO-PAGES-MENU*/
+  /*RESTAURANTS-PAGES-HEADER*/
 
-  &__menu {
-    align-items: center;
+  &__link {
+    /*ICON*/
 
-    /*FLECHE*/
-    &--link {
+    a {
       position: absolute;
       left: 20px;
       img {
-        @include icon-size-2;
+        padding-top: 5px;
+        height: 18px;
+        width: auto;
       }
     }
   }

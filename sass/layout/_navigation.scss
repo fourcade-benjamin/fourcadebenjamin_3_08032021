@@ -1,27 +1,30 @@
-/*PAGES-MENUS-RESTAURANTS*/
+/*RESTAURANTS-PAGES*/
 
-/*A-PHOTO*/
+/*RESTAURANT-PICTURE*/
 
-.photo {
+.restaurantPictureBox {
   width: 110%;
   height: 260px;
   background-size: cover;
   background-position: top 0 right 15px;
   background-repeat: no-repeat;
-  background-image: url(/fourcadebenjamin_3_08032021/sources/img/resto_1.jpg);
-  &--b {
+  background-image: url(/sources/img/resto_1.jpg);
+  /*LA NOTE ENCHANTEE*/
+  &--restaurant2 {
     width: 100%;
     background-position: center;
-    background-image: url(/fourcadebenjamin_3_08032021/sources/img/resto_2.jpg);
+    background-image: url(/sources/img/resto_2.jpg);
   }
-  &--c {
-    background-image: url(/fourcadebenjamin_3_08032021/sources/img/resto_3.jpg);
+  /*A LA FRANCAISE*/
+  &--restaurant3 {
+    background-image: url(/sources/img/resto_3.jpg);
   }
-  &--d {
+  /*LE DELICE DES SENS*/
+  &--restaurant4 {
     background-position: center;
-    background-image: url(/fourcadebenjamin_3_08032021/sources/img/resto_4.jpg);
+    background-image: url(/sources/img/resto_4.jpg);
   }
-  &__stripe {
+  &__bottomStripe {
     width: 91%;
     height: 40px;
     background-color: $couleur-section;
@@ -29,20 +32,152 @@
     top: 220px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    &--b {
+    &--restaurant2 {
       width: 100%;
     }
   }
 }
 
-/*A'-ICONE-HEART+ANIMATION*/
+/*MENU*/
 
-.full-titre {
-  width: 90%;
+.menuBox {
   display: flex;
+  flex-flow: column wrap;
   align-items: center;
-  justify-content: space-between;
+  background-color: $couleur-section;
+  width: 100%;
+  &__title {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-family: "shrikhand";
+      margin: 0 0 0 5px;
+      font-size: 1.6em;
+    }
+  }
+  &__mainGroup {
+    width: 90%;
+  }
+  &__category {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin: 45px 0 5px 5px;
+  }
+  &__greenUnderline {
+    width: 40px;
+    height: 3px;
+    background-color: $couleur-tertiaire;
+    margin: 0 0 15px 5px;
+  }
+  &__item {
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 17px;
+    box-shadow: gray 1px 1px 8px;
+    animation: transformY 1s ease-in-out, normalMarginSpace 1s ease-in-out;
+
+    &__text {
+      width: 100%;
+      overflow: hidden;
+      h2 {
+        letter-spacing: 0.5px;
+        font-size: 1em;
+        padding-top: 15px;
+        margin: 0 0 8px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p {
+        margin: 0 0 10px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.9em;
+      }
+    }
+    &__price {
+      font-weight: bold;
+      padding: 0 20px 9px 20px;
+      display: flex;
+      align-items: flex-end;
+    }
+    &__hoverBox {
+      flex-shrink: 0;
+      width: 0;
+      transition: width 0.5s;
+      background-color: #99e2d0;
+      &__element {
+        padding-top: 25px;
+        padding-left: 20px;
+        svg {
+          fill: white;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover .menuBox__item__hoverBox {
+      width: 60px;
+      transition: width 0.5s;
+      background-color: #99e2d0;
+    }
+    &:hover svg {
+      animation: checkIconRoll 0.5s;
+      transform: rotate(360deg);
+    }
+  }
+  /*SVG-CHECK-ANIMATION*/
+
+  @keyframes checkIconRoll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*ITEMS-ANIMATION*/
+
+  @keyframes transformY {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes normalMarginSpace {
+    from {
+      margin-bottom: 20px;
+    }
+    to {
+      margin-bottom: 15px;
+    }
+  }
 }
+
+/*RESPONSIVE-RESTAURANT-PICTURE*/
+
+@media screen and (min-width: 390px) {
+  .restaurantPictureBox {
+    background-position: 50% 50%;
+  }
+}
+
+/*SVG-HEART + ANIMATION*/
+
 .g {
   &__path {
     fill: $couleur-section;
@@ -128,142 +263,5 @@
   }
   to {
     transform: translateY(0);
-  }
-}
-
-/*B-SECTION-MENU*/
-
-.menu {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  background-color: $couleur-section;
-  width: 100%;
-  h1 {
-    font-family: "shrikhand";
-    margin: 0 0 0 5px;
-    font-size: 1.6em;
-  }
-  &__grp {
-    width: 90%;
-  }
-  &__cat {
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    margin: 45px 0 5px 5px;
-  }
-  &__under {
-    width: 40px;
-    height: 3px;
-    background-color: $couleur-tertiaire;
-    margin: 0 0 15px 5px;
-  }
-}
-
-/*B'ANIMATION-MENU-(SELECTION+APPARITION*/
-
-.box {
-  overflow: hidden;
-  display: flex;
-  margin-bottom: 15px;
-  background-color: white;
-  border-radius: 17px;
-  box-shadow: gray 1px 1px 8px;
-  animation: upe 1s ease-in-out, margine 1s ease-in-out;
-  &:hover {
-    cursor: pointer;
-  }
-  &:hover .box__hov {
-    width: 60px;
-    transition: width 0.5s;
-    background-color: #99e2d0;
-  }
-  &:hover svg {
-    animation: roll 0.5s;
-    transform: rotate(360deg);
-  }
-  &__txt {
-    width: 100%;
-    overflow: hidden;
-    h2 {
-      letter-spacing: 0.5px;
-      font-size: 1em;
-      padding-top: 15px;
-      margin: 0 0 8px 10px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    p {
-      margin: 0 0 10px 10px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      font-size: 0.9em;
-    }
-  }
-  &__spn {
-    font-weight: bold;
-    padding: 0 20px 9px 20px;
-    display: flex;
-    align-items: flex-end;
-  }
-  &__hov {
-    flex-shrink: 0;
-    width: 0;
-    transition: width 0.5s;
-    background-color: #99e2d0;
-    &__el {
-      padding-top: 25px;
-      padding-left: 20px;
-      svg {
-        fill: white;
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-}
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes upe {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes margine {
-  from {
-    margin-bottom: 20px;
-  }
-  to {
-    margin-bottom: 15px;
-  }
-}
-
-/*@-MEDIA*/
-
-@media screen and (min-width: 390px) {
-  .photo {
-    background-position: 50% 50%;
   }
 }

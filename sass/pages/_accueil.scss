@@ -1,6 +1,6 @@
 /*ACCUEIL*/
 
-/*B-DIV-LOCALISATION*/
+/*LOCALISATION*/
 
 .localisation {
   display: flex;
@@ -18,7 +18,7 @@
   }
 }
 
-/*C-SECTION-PRESENTATION*/
+/*PRESENTATION*/
 
 .presentation {
   padding: 43px 0 57px 0;
@@ -41,7 +41,7 @@
   }
 }
 
-/*D-SECTION-FONCTIONNEMENT*/
+/*FONCTIONNEMENT*/
 
 .fonctionnement {
   display: flex;
@@ -56,9 +56,9 @@
       margin: 0;
     }
   }
-  &__group {
+  &__box {
     width: 90%;
-    &--a {
+    &__item {
       @include box-shadow;
       background-color: $couleur-section;
       margin-bottom: 25px;
@@ -72,7 +72,8 @@
         margin-left: 27px;
       }
       img {
-        @include icon-size-2;
+        width: 30px;
+        height: 18px;
         filter: invert(45%) sepia(91%) saturate(13%) hue-rotate(68deg)
           brightness(92%) contrast(96%);
       }
@@ -86,7 +87,7 @@
         font-size: 0.8em;
       }
     }
-    &--mauve {
+    &--colorpurple {
       background-color: #f5edff;
       img {
         filter: invert(40%) sepia(68%) saturate(867%) hue-rotate(231deg)
@@ -96,9 +97,9 @@
   }
 }
 
-/*E-CARTES-RESTAURANTS*/
+/*RESTAURANTS-CARDS*/
 
-.restaurants {
+.restaurantsBox {
   padding: 0 20px 46px 20px;
   background-color: $couleur-section;
   display: flex;
@@ -106,7 +107,7 @@
   a {
     margin-bottom: 18px;
   }
-  &__new {
+  &__nouveau {
     float: right;
     position: relative;
     bottom: 175px;
@@ -121,16 +122,7 @@
   h2 {
     margin: 50px 0 25px 0;
   }
-  &__lieu {
-    padding: 10px 0 19px 13px;
-    h3 {
-      margin: 0 0 2px 0;
-    }
-    p {
-      margin: 0;
-    }
-  }
-  &__carte {
+  &__card {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
@@ -144,15 +136,25 @@
       border-top-right-radius: 20px;
     }
 
-    &--modif {
+    &--imgModification {
       img {
         object-position: 0 60%;
       }
     }
   }
+  &__localisation {
+    padding: 10px 0 19px 13px;
+    h3 {
+      margin: 0 0 2px 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  /*RESTAURANTS-CARDS*/
 }
 @media screen and (min-width: 390px) {
-  .restaurants__carte img {
+  .restaurantsBox__card img {
     object-position: 50% 50%;
   }
 }

@@ -4,17 +4,9 @@
   width: 12px;
   height: 16px;
 }
-@mixin icon-size-2 {
-  width: 30px;
-  height: 18px;
-}
 @mixin icon-size-3 {
   width: 21px;
   height: 21px;
-}
-@mixin logo-size {
-  width: 165px;
-  height: 30px;
 }
 @mixin flex-center {
   display: flex;

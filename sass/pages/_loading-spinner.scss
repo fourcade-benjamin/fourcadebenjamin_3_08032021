@@ -1,6 +1,5 @@
-/*A-LOADING-SPINNER*/
-
-.box-spinner {
+/*LOADING-SPINNER*/
+.Loading-SpinnerBox {
   width: 0%;
   height: 0vh;
   background-color: $couleur-section;
@@ -10,26 +9,58 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  & {
-    animation: space_spin 4000ms cubic-bezier(1, -1, 1, 50);
+  animation: main_box 3500ms cubic-bezier(1, -1, 1, 50);
+  /*SVG-FORK*/
+  &__fork {
+    margin-left: 60px;
+    svg {
+      height: 100px;
+      fill: rgba(147, 86, 220, 0.5);
+    }
+  }
+  /*SVG-KNIFE*/
+  &__knife {
+    margin-right: 60px;
+    svg {
+      height: 100px;
+      fill: rgba(147, 86, 220, 0.5);
+      transform: scaleX(-1);
+    }
+  }
+  /*CENTRAL-CIRCLE*/
+  &__circle {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    &__border {
+      width: 150px;
+      height: 150px;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: $couleur-primaire;
+      background: linear-gradient(
+        0deg,
+        rgba(147, 86, 220, 0.1) 33%,
+        rgba(255, 121, 218, 0.5) 100%
+      );
+
+      animation: circle 1s linear 0s 3;
+    }
+    &__core {
+      width: 100%;
+      height: 100%;
+      background-color: $couleur-section;
+      border-radius: 50%;
+    }
   }
 }
-.box-spinner__fork {
-  margin-left: 60px;
-  svg {
-    height: 100px;
-    fill: rgba(147, 86, 220, 0.5);
-  }
-}
-.box-spinner__knife {
-  margin-right: 60px;
-  svg {
-    height: 100px;
-    fill: rgba(147, 86, 220, 0.5);
-    transform: scaleX(-1);
-  }
-}
-@keyframes space_spin {
+/*BOX-KEYFRAMES*/
+@keyframes main_box {
   0% {
     width: 100%;
     height: 100vh;
@@ -59,40 +90,8 @@
     opacity: 0;
   }
 }
-
-/*SPINNER-CENTRALE*/
-
-.circle {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-}
-.circle__border {
-  width: 150px;
-  height: 150px;
-  padding: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: $couleur-primaire;
-  background: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.1) 33%,
-    rgba(255, 121, 218, 0.5) 100%
-  );
-
-  animation: spin 1s linear 0s 3;
-}
-.circle__core {
-  width: 100%;
-  height: 100%;
-  background-color: $couleur-section;
-  border-radius: 50%;
-}
-@keyframes spin {
+/*CIRCLE-KEYFRAMES*/
+@keyframes circle {
   from {
     transform: rotate(0);
   }
