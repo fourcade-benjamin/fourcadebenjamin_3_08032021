@@ -7,18 +7,6 @@ a {
   color: unset;
 }
 
-html {
-  overflow-x: hidden;
-}
-
-body {
-  margin: auto;
-  font-family: "roboto";
-  width: 100%;
-  overflow-x: hidden;
-  font-size: 100%;
-}
-
 /*EXPLORER-NOS-RESTAURANTS*/
 .homePage-button {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -142,6 +130,18 @@ body {
     transform: translateY(0);
   }
 }
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: auto;
+  font-family: "roboto";
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
 /*RESTAURANTS-PAGES*/
 /*RESTAURANT-PICTURE*/
 .restaurantPictureBox {
