@@ -1,19 +1,112 @@
-/*BOUTON-PRINCIPAL*/
+/*EXPLORER-NOS-RESTAURANTS*/
 
-.main-btn {
-  @include bouton-principal;
+.homePage-button {
+  @include homePageButton;
   &:hover {
     cursor: pointer;
     filter: opacity(0.9);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
   }
 }
-.menu-btn {
-  @include bouton-menu;
+
+/*COMMANDER*/
+
+.restaurantPage-button {
+  @include restaurantPageButton;
   margin: 31px 0 58px 0;
   &:hover {
     cursor: pointer;
     filter: opacity(0.9);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*LIKE-BUTTON*/
+
+.likeButton {
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+  &__homepage {
+    position: relative;
+    float: right;
+    bottom: 40px;
+  }
+  &:hover {
+    cursor: pointer;
+    rect {
+      fill: $gradient1;
+      transform: translateY(-100%);
+      animation-name: gradient;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+    }
+  }
+  &--2 {
+    &:hover {
+      cursor: pointer;
+      rect {
+        fill: $gradient2;
+        transform: translateY(-100%);
+        animation-name: test;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+      }
+    }
+  }
+  &--3 {
+    &:hover {
+      cursor: pointer;
+      rect {
+        fill: $gradient3;
+        transform: translateY(-100%);
+        animation-name: test;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+      }
+    }
+  }
+  &--4 {
+    &:hover {
+      cursor: pointer;
+      rect {
+        fill: $gradient4;
+        transform: translateY(-100%);
+        animation-name: test;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+      }
+    }
+  }
+}
+.group {
+  &__path {
+    fill: $section-color;
+    stroke: black;
+    stroke-width: 30px;
+    &--homepage {
+      fill: transparent;
+    }
+  }
+  rect {
+    height: 100%;
+    width: 100%;
+    fill: transparent;
+  }
+}
+@keyframes gradient {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

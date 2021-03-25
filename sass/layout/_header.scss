@@ -1,6 +1,6 @@
 /*HOME-PAGE-HEADER*/
 
-.HeaderBox {
+.headerBox {
   display: flex;
   justify-content: center;
   padding: 22px 0 12px 0;
@@ -10,10 +10,8 @@
   }
 
   /*RESTAURANTS-PAGES-HEADER*/
-
+  /*ICON*/
   &__link {
-    /*ICON*/
-
     a {
       position: absolute;
       left: 20px;

@@ -1,16 +1,15 @@
 /*VARIABLES*/
 
-$couleur-primaire: #9356dc;
-$couleur-secondaire: #ff79da;
-$couleur-tertiaire: #99e2d0;
-$couleur-footer: #353535;
-$couleur-typo: #000000;
-$couleur-h1: #101010;
-$couleur-section: #f6f6f6;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$footer-color: #353535;
+$section-color: #f6f6f6;
 
-/*REPETITON ID GRANDIENT*/
+/*LIKE-BUTTON IN HOME-PAGE
+    REPETITON OF ID "GRADIENT"*/
 
-$grd: url(#grad);
-$grd-b: url(#grad-b);
-$grd-c: url(#grad-c);
-$grd-d: url(#grad-d);
+$gradient1: url(#gradient-1);
+$gradient2: url(#gradient-2);
+$gradient3: url(#gradient-3);
+$gradient4: url(#gradient-4);
