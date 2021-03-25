@@ -1,8 +1,7 @@
 /*VARIABLES*/
-/*REPETITON ID GRANDIENT*/
-/*MIXINS*/
+/*LIKE-BUTTON IN HOME-PAGE
+    REPETITON OF ID "GRADIENT"*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-/*CSS*/
 a {
   text-decoration: none;
   color: unset;
@@ -20,8 +19,8 @@ body {
   font-size: 100%;
 }
 
-/*BOUTON-PRINCIPAL*/
-.main-btn {
+/*EXPLORER-NOS-RESTAURANTS*/
+.homePage-button {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   font-family: "roboto";
   font-weight: 600;
@@ -35,13 +34,14 @@ body {
   letter-spacing: 0.1px;
   font-size: 0.9em;
 }
-.main-btn:hover {
+.homePage-button:hover {
   cursor: pointer;
   filter: opacity(0.9);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
-.menu-btn {
+/*COMMANDER*/
+.restaurantPage-button {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   font-family: "roboto";
   font-weight: 600;
@@ -54,12 +54,94 @@ body {
   font-size: 0.9em;
   margin: 31px 0 58px 0;
 }
-.menu-btn:hover {
+.restaurantPage-button:hover {
   cursor: pointer;
   filter: opacity(0.9);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
+/*LIKE-BUTTON*/
+.likeButton {
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+.likeButton svg {
+  width: 25px;
+  height: 25px;
+}
+.likeButton__homepage {
+  position: relative;
+  float: right;
+  bottom: 40px;
+}
+.likeButton:hover {
+  cursor: pointer;
+}
+.likeButton:hover rect {
+  fill: url(#gradient-1);
+  transform: translateY(-100%);
+  animation-name: gradient;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+}
+.likeButton--2:hover {
+  cursor: pointer;
+}
+.likeButton--2:hover rect {
+  fill: url(#gradient-2);
+  transform: translateY(-100%);
+  animation-name: test;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+}
+.likeButton--3:hover {
+  cursor: pointer;
+}
+.likeButton--3:hover rect {
+  fill: url(#gradient-3);
+  transform: translateY(-100%);
+  animation-name: test;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+}
+.likeButton--4:hover {
+  cursor: pointer;
+}
+.likeButton--4:hover rect {
+  fill: url(#gradient-4);
+  transform: translateY(-100%);
+  animation-name: test;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
+}
+
+.group__path {
+  fill: #f6f6f6;
+  stroke: black;
+  stroke-width: 30px;
+}
+.group__path--homepage {
+  fill: transparent;
+}
+.group rect {
+  height: 100%;
+  width: 100%;
+  fill: transparent;
+}
+
+@keyframes gradient {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 /*RESTAURANTS-PAGES*/
 /*RESTAURANT-PICTURE*/
 .restaurantPictureBox {
@@ -73,18 +155,6 @@ body {
   /*A LA FRANCAISE*/
   /*LE DELICE DES SENS*/
 }
-.restaurantPictureBox--restaurant2 {
-  width: 100%;
-  background-position: center;
-  background-image: url(/sources/img/resto_2.jpg);
-}
-.restaurantPictureBox--restaurant3 {
-  background-image: url(/sources/img/resto_3.jpg);
-}
-.restaurantPictureBox--restaurant4 {
-  background-position: center;
-  background-image: url(/sources/img/resto_4.jpg);
-}
 .restaurantPictureBox__bottomStripe {
   width: 91%;
   height: 40px;
@@ -96,6 +166,18 @@ body {
 }
 .restaurantPictureBox__bottomStripe--restaurant2 {
   width: 100%;
+}
+.restaurantPictureBox--restaurant2 {
+  width: 100%;
+  background-position: center;
+  background-image: url(/sources/img/resto_2.jpg);
+}
+.restaurantPictureBox--restaurant3 {
+  background-image: url(/sources/img/resto_3.jpg);
+}
+.restaurantPictureBox--restaurant4 {
+  background-position: center;
+  background-image: url(/sources/img/resto_4.jpg);
 }
 
 /*MENU*/
@@ -140,7 +222,7 @@ body {
   margin-bottom: 15px;
   background-color: white;
   border-radius: 17px;
-  box-shadow: gray 1px 1px 8px;
+  box-shadow: #e2e2e2 0px 3px 5px;
   animation: transformY 1s ease-in-out, normalMarginSpace 1s ease-in-out;
 }
 .menuBox__item__text {
@@ -148,10 +230,9 @@ body {
   overflow: hidden;
 }
 .menuBox__item__text h2 {
-  letter-spacing: 0.5px;
   font-size: 1em;
   padding-top: 15px;
-  margin: 0 0 8px 10px;
+  margin: 0 0 5px 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -161,7 +242,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 .menuBox__item__price {
   font-weight: bold;
@@ -174,6 +255,9 @@ body {
   width: 0;
   transition: width 0.5s;
   background-color: #99e2d0;
+}
+.menuBox__item__hoverBox #wrap {
+  padding-top: 35px;
 }
 .menuBox__item__hoverBox__element {
   padding-top: 25px;
@@ -229,107 +313,23 @@ body {
     background-position: 50% 50%;
   }
 }
-/*SVG-HEART + ANIMATION*/
-.g__path {
-  fill: #f6f6f6;
-  stroke: black;
-  stroke-width: 30px;
-}
-.g__path--acc {
-  fill: transparent;
-}
-.g rect {
-  height: 100%;
-  width: 100%;
-  fill: transparent;
-}
-
-.card {
-  width: 20px;
-  height: 20px;
-  margin-right: 30px;
-}
-.card--b:hover {
-  cursor: pointer;
-}
-.card--b:hover rect {
-  fill: url(#grad-b);
-  transform: translateY(-100%);
-  animation-name: test;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
-}
-.card--c:hover {
-  cursor: pointer;
-}
-.card--c:hover rect {
-  fill: url(#grad-c);
-  transform: translateY(-100%);
-  animation-name: test;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
-}
-.card--d:hover {
-  cursor: pointer;
-}
-.card--d:hover rect {
-  fill: url(#grad-d);
-  transform: translateY(-100%);
-  animation-name: test;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
-}
-.card--acc {
-  position: relative;
-  float: right;
-  bottom: 40px;
-}
-.card svg {
-  width: 25px;
-  height: 25px;
-}
-.card:hover {
-  cursor: pointer;
-}
-.card:hover rect {
-  fill: url(#grad);
-  transform: translateY(-100%);
-  animation-name: test;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.64, 0.35, 1, 0.88);
-}
-
-@keyframes test {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 /*HOME-PAGE-HEADER*/
-.HeaderBox {
+.headerBox {
   display: flex;
   justify-content: center;
   padding: 22px 0 12px 0;
   /*RESTAURANTS-PAGES-HEADER*/
+  /*ICON*/
 }
-.HeaderBox__logo {
+.headerBox__logo {
   width: auto;
   height: 30px;
 }
-.HeaderBox__link {
-  /*ICON*/
-}
-.HeaderBox__link a {
+.headerBox__link a {
   position: absolute;
   left: 20px;
 }
-.HeaderBox__link a img {
+.headerBox__link a img {
   padding-top: 5px;
   height: 18px;
   width: auto;
@@ -361,7 +361,7 @@ body {
 }
 
 /*LOADING-SPINNER*/
-.Loading-SpinnerBox {
+.loading-SpinnerBox {
   width: 0%;
   height: 0vh;
   background-color: #f6f6f6;
@@ -376,29 +376,29 @@ body {
   /*SVG-KNIFE*/
   /*CENTRAL-CIRCLE*/
 }
-.Loading-SpinnerBox__fork {
+.loading-SpinnerBox__fork {
   margin-left: 60px;
 }
-.Loading-SpinnerBox__fork svg {
+.loading-SpinnerBox__fork svg {
   height: 100px;
   fill: rgba(147, 86, 220, 0.5);
 }
-.Loading-SpinnerBox__knife {
+.loading-SpinnerBox__knife {
   margin-right: 60px;
 }
-.Loading-SpinnerBox__knife svg {
+.loading-SpinnerBox__knife svg {
   height: 100px;
   fill: rgba(147, 86, 220, 0.5);
   transform: scaleX(-1);
 }
-.Loading-SpinnerBox__circle {
+.loading-SpinnerBox__circle {
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
 }
-.Loading-SpinnerBox__circle__border {
+.loading-SpinnerBox__circle__border {
   width: 150px;
   height: 150px;
   padding: 3px;
@@ -408,9 +408,9 @@ body {
   border-radius: 50%;
   background-color: #9356dc;
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.1) 33%, rgba(255, 121, 218, 0.5) 100%);
-  animation: circle 1s linear 0s 3;
+  animation: circle 1s linear 3;
 }
-.Loading-SpinnerBox__circle__core {
+.loading-SpinnerBox__circle__core {
   width: 100%;
   height: 100%;
   background-color: #f6f6f6;
@@ -458,6 +458,7 @@ body {
   }
 }
 /*ACCUEIL*/
+/*_HEADER.SCSS*/
 /*LOCALISATION*/
 .localisation {
   display: flex;
@@ -516,7 +517,7 @@ body {
   width: 90%;
 }
 .fonctionnement__box__item {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px 0 rgba(68, 68, 68, 0.2);
   background-color: #f6f6f6;
   margin-bottom: 25px;
   border-radius: 20px;
@@ -543,10 +544,10 @@ body {
   right: 10px;
   font-size: 0.8em;
 }
-.fonctionnement__box--colorpurple {
+.fonctionnement__box__item--colorpurple {
   background-color: #f5edff;
 }
-.fonctionnement__box--colorpurple img {
+.fonctionnement__box__item--colorpurple img {
   filter: invert(40%) sepia(68%) saturate(867%) hue-rotate(231deg) brightness(91%) contrast(91%);
 }
 
@@ -579,7 +580,7 @@ body {
 .restaurantsBox__card {
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 20px 0 rgba(46, 46, 46, 0.2);
 }
 .restaurantsBox__card img {
   width: 100%;
@@ -607,5 +608,6 @@ body {
     object-position: 50% 50%;
   }
 }
+/*_FOOTER.SCSS*/
 
 /*# sourceMappingURL=main.css.map */
