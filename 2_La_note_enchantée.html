@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,53 +11,58 @@
   <body>
     <!--HEADER-->
 
-    <header class="HeaderBox">
+    <header class="headerBox">
       <!--ARROW-->
-      <div class="HeaderBox__link">
-        <a  href="/index.html" >
+      <div class="headerBox__link">
+        <a href="/index.html">
           <img src="/sources/icon/arrow.svg" alt="icône flèche" />
         </a>
       </div>
       <!--LOGO-->
 
-      <img class="HeaderBox__logo" src="/sources/img/logo.png" alt="logo ohmyfood!" />
-    </div>
-  </header>
+      <img
+        class="headerBox__logo"
+        src="/sources/img/logo.png"
+        alt="logo ohmyfood!"
+      />
+    </header>
 
     <!--RESTAURANT-PICTURE-->
 
     <div class="restaurantPictureBox restaurantPictureBox--restaurant2">
-      <div class="restaurantPictureBox__bottomStripe restaurantPictureBox__bottomStripe--restaurant2"></div>
+      <div
+        class="restaurantPictureBox__bottomStripe restaurantPictureBox__bottomStripe--restaurant2"
+      ></div>
     </div>
 
     <!--MENU-->
 
     <section class="menuBox">
-      <!--TITLE-->
+      <!--TITLE + LIKE BUTTON-->
 
       <div class="menuBox__title">
         <div>
           <h1>La note enchantée</h1>
         </div>
 
-        <!--SVG-->
+        <!--LIKE-BUTTON-->
 
-        <div class="card">
+        <div class="likeButton">
           <svg viewBox="-10 10 550 550" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <linearGradient id="gradient-1" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stop-color="#9356DC" />
                 <stop offset="100%" stop-color="#FF79DA" />
               </linearGradient>
             </defs>
-            <clippath id="minnesota">
+            <clippath id="pth1">
               <path
                 d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
               ></path>
             </clippath>
-            <g clip-path="url(#minnesota)" class="g">
+            <g clip-path="url(#pth1)" class="group">
               <path
-                class="g__path"
+                class="group__path"
                 d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
               ></path>
               <rect height="100" width="100" />
@@ -109,7 +113,7 @@
 
         <div class="menuBox__item">
           <div class="menuBox__item__text">
-            <h2>Caviar osciètre </h2>
+            <h2>Caviar osciètre</h2>
             <p>Sur blini à la farine de blé noir</p>
           </div>
           <div class="menuBox__item__price">
@@ -140,7 +144,7 @@
         <div class="menuBox__item">
           <div class="menuBox__item__text">
             <h2>Homard et espuma de potiron</h2>
-            <p>Assaisonné à la truffe sur lit de caviar</p>
+            <p>Mariné aux zestes d'orange</p>
           </div>
           <div class="menuBox__item__price">
             <span>20€</span>
@@ -264,7 +268,7 @@
 
         <div class="menuBox__item">
           <div class="menuBox__item__text">
-            <h2>Mijoté de queue de boeuf </h2>
+            <h2>Mijoté de queue de boeuf</h2>
             <p>Et riz sauvage aux zestes de citron</p>
           </div>
           <div class="menuBox__item__price">
@@ -329,7 +333,7 @@
 
         <div class="menuBox__item">
           <div class="menuBox__item__text">
-            <h2>Baba au rhum revisité </h2>
+            <h2>Baba au rhum revisité</h2>
             <p>Avec son coulis de citron</p>
           </div>
           <div class="menuBox__item__price">
@@ -359,7 +363,7 @@
 
         <div class="menuBox__item">
           <div class="menuBox__item__text">
-            <h2>Tarte au citron meringuée </h2>
+            <h2>Tarte au citron meringuée</h2>
             <p>Déstructurée</p>
           </div>
           <div class="menuBox__item__price">
@@ -387,7 +391,7 @@
       </div>
       <!--COMMANDER-->
 
-      <button class="menu-btn">Commander</button>
+      <button class="restaurantPage-button">Commander</button>
     </section>
 
     <!--FOOTER-->
@@ -419,5 +423,4 @@
       </ul>
     </footer>
   </body>
-
 </html>

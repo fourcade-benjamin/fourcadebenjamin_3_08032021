@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="/main.css" />
     <title>OHMYFOOD!</title>
   </head>
+
   <body>
     <!--LOADING-SPINNER-->
 
-    <div class="Loading-SpinnerBox">
+    <div class="loading-SpinnerBox">
       <!--SVG-FORK-->
-      <div class="Loading-SpinnerBox__fork">
+      <div class="loading-SpinnerBox__fork">
         <svg
           version="1.1"
           id="Capa_1"
@@ -42,13 +43,13 @@
         </svg>
       </div>
       <!--CENTRAL-CIRCLE-->
-      <div class="Loading-SpinnerBox__circle">
-        <div class="Loading-SpinnerBox__circle__border">
-          <div class="Loading-SpinnerBox__circle__core"></div>
+      <div class="loading-SpinnerBox__circle">
+        <div class="loading-SpinnerBox__circle__border">
+          <div class="loading-SpinnerBox__circle__core"></div>
         </div>
       </div>
       <!--SVG-KNIFE-->
-      <div class="Loading-SpinnerBox__knife">
+      <div class="loading-SpinnerBox__knife">
         <svg
           version="1.1"
           id="Capa_2"
@@ -75,11 +76,11 @@
 
     <!--HEADER-->
 
-    <header class="HeaderBox">
+    <header class="headerBox">
       <!--LOGO-->
 
       <img
-        class="HeaderBox__logo"
+        class="headerBox__logo"
         src="/sources/img/logo.png"
         alt="ohmyfood! logo"
       />
@@ -87,10 +88,10 @@
 
     <!--LOCALISATION-->
 
-    <section class="localisation">
+    <div class="localisation">
       <img src="/sources/icon/map.svg" alt="localisation icon" />
       <p>Paris, Belleville</p>
-    </section>
+    </div>
 
     <!--PRESENTATION-->
 
@@ -102,7 +103,7 @@
 
       <!--BOUTON-->
 
-      <button class="main-btn">Explorer nos restaurants</button>
+      <button class="homePage-button">Explorer nos restaurants</button>
     </section>
 
     <!--FONCTIONNEMENT-->
@@ -131,7 +132,9 @@
 
         <!--FONCTIONNEMENT-3-->
 
-        <div class="fonctionnement__box__item fonctionnement__box--colorpurple">
+        <div
+          class="fonctionnement__box__item fonctionnement__box__item--colorpurple"
+        >
           <span>3</span
           ><img src="/sources/icon/store.svg" alt="icône boutique" />
           <p>Dégustez au restaurant</p>
@@ -155,19 +158,25 @@
             alt="Restaurant La palette du goût"
           />
 
-          <!--TEXT + LIKE-->
+          <!--TEXT + LIKE-BUTTON-->
 
           <div class="restaurantsBox__localisation">
             <div class="restaurantsBox__nouveau"><p>Nouveau</p></div>
             <h3>La palette du goût</h3>
             <p>Ménilmontant</p>
 
-            <!--SVG-HEART-->
+            <!--LIKE-BUTTON-->
 
-            <div class="card card--acc">
+            <div class="likeButton likeButton__homepage">
               <svg viewBox="-10 10 550 550" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <linearGradient
+                    id="gradient-1"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
                     <stop offset="0%" stop-color="#9356DC" />
                     <stop offset="100%" stop-color="#FF79DA" />
                   </linearGradient>
@@ -177,12 +186,12 @@
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
                 </clippath>
-                <g clip-path="url(#pth1)" class="g">
+                <g clip-path="url(#pth1)" class="group">
                   <path
-                    class="g__path g__path--acc"
+                    class="group__path group__path--homepage"
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
-                  <rect height="100" width="100" />
+                  <rect />
                 </g>
               </svg>
             </div>
@@ -203,19 +212,27 @@
             alt="Restaurant La note enchantée"
           />
 
-          <!--TEXT + LIKE-->
+          <!--TEXT + LIKE-BUTTON-->
 
           <div class="restaurantsBox__localisation">
             <div class="restaurantsBox__nouveau"><p>Nouveau</p></div>
             <h3>La note enchantée</h3>
             <p>Charonne</p>
 
-            <!--SVG-HEART-->
+            <!--LIKE-BUTTON-->
 
-            <div class="card card--acc card--b">
+            <div
+              class="likeButton likeButton__homepage likeButton__homepage--2"
+            >
               <svg viewBox="-10 10 550 550" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="grad-b" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <linearGradient
+                    id="gradient-2"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
                     <stop offset="0%" stop-color="#9356DC" />
                     <stop offset="100%" stop-color="#FF79DA" />
                   </linearGradient>
@@ -225,9 +242,9 @@
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
                 </clippath>
-                <g clip-path="url(#pth2)" class="g">
+                <g clip-path="url(#pth2)" class="group">
                   <path
-                    class="g__path g__path--acc"
+                    class="group__path group__path--homepage"
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
                   <rect height="100" width="100" />
@@ -246,18 +263,26 @@
 
           <img src="/sources/img/resto_3.jpg" alt="Restaurant À la française" />
 
-          <!--TEXT + LIKE-->
+          <!--TEXT + LIKE-BUTTON-->
 
           <div class="restaurantsBox__localisation">
             <h3>À la française</h3>
             <p>Cité rouge</p>
 
-            <!--SVG-HEART-->
+            <!--LIKE-BUTTON-->
 
-            <div class="card card--acc card--c">
+            <div
+              class="likeButton likeButton__homepage likeButton__homepage--3"
+            >
               <svg viewBox="-10 10 550 550" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="grad-c" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <linearGradient
+                    id="gradient-3"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
                     <stop offset="0%" stop-color="#9356DC" />
                     <stop offset="100%" stop-color="#FF79DA" />
                   </linearGradient>
@@ -267,9 +292,9 @@
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
                 </clippath>
-                <g clip-path="url(#pth3)" class="g">
+                <g clip-path="url(#pth3)" class="group">
                   <path
-                    class="g__path g__path--acc"
+                    class="group__path group__path--homepage"
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
                   <rect height="100" width="100" />
@@ -291,18 +316,26 @@
             alt="Restaurant Le délice des sens"
           />
 
-          <!--TEXT + LIKE-->
+          <!--TEXT + LIKE-BUTTON-->
 
           <div class="restaurantsBox__localisation">
             <h3>Le délice des sens</h3>
             <p>Folie-Méricourt</p>
 
-            <!--SVG-HEART-->
+            <!--LIKE-BUTTON-->
 
-            <div class="card card--acc card--d">
+            <div
+              class="likeButton likeButton__homepage likeButton__homepage--4"
+            >
               <svg viewBox="-10 10 550 550" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="grad-d" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <linearGradient
+                    id="gradient-4"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
                     <stop offset="0%" stop-color="#9356DC" />
                     <stop offset="100%" stop-color="#FF79DA" />
                   </linearGradient>
@@ -312,9 +345,9 @@
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
                 </clippath>
-                <g clip-path="url(#pth4)" class="g">
+                <g clip-path="url(#pth4)" class="group">
                   <path
-                    class="g__path g__path--acc"
+                    class="group__path group__path--homepage"
                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
                   ></path>
                   <rect height="100" width="100" />
